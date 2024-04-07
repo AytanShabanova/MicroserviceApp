@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2023-03-10-create
+      author: admin
+      changes:
+        -createTable:
+          columns:
+           - column:
+               name: id
+               type: bigint
+               constraints:
+                primaryKey: true
+
+           - column:
+               name: name
+               type: varchar(255)
+           - column:
+               name: surname
+               type: varchar(255)
+
+           - column:
+               name: surname
+               type: varchar(255)
+          tableName: students
